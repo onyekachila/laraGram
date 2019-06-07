@@ -53,4 +53,15 @@ class PostsController extends Controller
         return redirect('/profile/' . auth()->user()->id);  // returns back to the authenticated user's profile.
 
     }
+
+    public function show(Post $post)
+    {
+        // test to show we are properly passing in the id.
+        // dd($post);
+
+        // Model binding gives us all the post when we dd.
+        dd($post);
+
+
+    }
 }
